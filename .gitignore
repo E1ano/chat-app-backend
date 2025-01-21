@@ -1,0 +1,6 @@
+node_modules
+*.env
+dist/
+project_code.txt
+project_structure.txt
+extract_code.js
