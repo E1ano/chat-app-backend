@@ -1,6 +1,9 @@
 node_modules
 *.env
 dist/
+# Helper files
 project_code.txt
 project_structure.txt
 extract_code.js
+# macOS DS_Store files
+.DS_Store
