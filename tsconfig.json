@@ -9,7 +9,7 @@
     "esModuleInterop": true,
     "strict": true,
     "skipLibCheck": true,
-    "noImplicitThis": false // delete later
+    "noImplicitThis": false
   },
   "ts-node": {
     "esm": true,

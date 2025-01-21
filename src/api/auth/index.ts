@@ -3,15 +3,15 @@ import {
   loginUser,
   registerUser,
   refreshToken,
-} from '../controllers/authController.js';
-import googleAuthRoutes from './googleAuthRoutes.js';
-import githubAuthRoutes from './githubAuthRoutes.js';
+} from '../../controllers/authController.js';
+import googleOAuthRoutes from '../auth/googleOAuth.js';
+import githubOAuthRoutes from '../auth/githubOAuth.js';
 
 const router = express.Router();
 
 // OAuth-specific routes
-router.use('/google', googleAuthRoutes);
-router.use('/github', githubAuthRoutes);
+router.use('/google', googleOAuthRoutes);
+router.use('/github', githubOAuthRoutes);
 // router.use('/x', xAuthRoutes);
 
 // Classic auth rotes

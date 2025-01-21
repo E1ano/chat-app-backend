@@ -6,7 +6,7 @@ import dotenv from 'dotenv';
 import { errorHandlerMiddleware } from './middleware/errorHandlerMiddleware.js';
 import { sessionCompatibilityMiddleware } from './middleware/compatibilityMiddleware.js';
 
-import authRoutes from './routes/authRoutes.js';
+import apiRoutes from './api/index.js';
 import configurePassport from './config/passportConfig.js';
 
 // Load environment variables from config.env
@@ -42,7 +42,7 @@ app.use(passport.session());
 configurePassport();
 
 // Routes
-app.use('/api/v1/auth', authRoutes);
+app.use('/api/v1', apiRoutes);
 
 // Example route that throws a custom error
 app.get('/api/v1/auth/google1', (req: Request, res: Response) => {
